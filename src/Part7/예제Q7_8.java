@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.*;
 
-public class 예제7_8 {
+public class 예제Q7_8 {
     static void printList(LinkedList<String> I) {
         Iterator<String> iterator = I.iterator();
         while (iterator.hasNext()) {
