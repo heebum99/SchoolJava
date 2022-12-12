@@ -13,7 +13,7 @@ public class BufferedIOEx {
             //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out),5); => 한글까지 출력가능
             while ((c = fin.read()) != -1) {
                 out.write(c);
-            } //버퍼 크기가 5이므로 12345까지만 출력
+            } //버퍼 크기가 5이므로 크기가 5단위로 꽉찰때마다 출력하므로 12345까지만 출력
             new Scanner(System.in).nextLine();
             out.flush(); //line 17에 의해 ENTER 키를 입력받으면 flush()가 실행되면서 버퍼에 남아있던 나머지 678이 출력됨
             fin.close();
