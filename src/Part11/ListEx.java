@@ -17,13 +17,17 @@ public class ListEx extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container c = getContentPane();
         c.setLayout(new FlowLayout());
-        JList<String> strList = new JList<String>(fruits);
+
+        JList<String> strList = new JList<String>(fruits); //문자열 리스트생성
         c.add(strList);
-        JList<ImageIcon> imageList = new JList<ImageIcon>(images);
-        //imageList.setListData(images);
+
+        JList<ImageIcon> imageList = new JList<ImageIcon>(images); //이미지 리스트 생성
+        imageList.setListData(images);
         c.add(imageList);
-        JList<String> scrollList = new JList<String>(fruits);
-        c.add(new JScrollPane(scrollList));
+
+        JList<String> scrollList = new JList<String>(fruits); //문자열 리스트 생성
+        c.add(new JScrollPane(scrollList)); //리스트를 JScrollPane에 부착
+
         setSize(300, 300);
         setVisible(true);
     }
